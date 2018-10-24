@@ -61,14 +61,14 @@ public class Livro implements Imprimivel {
 
 	@Override
 	public String imprimeEmLista() {
-		// TODO Auto-generated method stub
-		return null;
+		return String.format("%d\t%s\t%d\t%s\t%d\t%s", getId(), getTitulo(), getAnoPublicacao(), getEditora(), 
+				getAutor().getId(), getAutor().getNome());
 	}
 
 	@Override
 	public String[] getColunas() {
-		// TODO Auto-generated method stub
-		return null;
+		String[] colunas = {"id", "Titulo", "Ano Publicacao", "Editora", "Id Autor"};
+		return colunas;
 	}
 
 }

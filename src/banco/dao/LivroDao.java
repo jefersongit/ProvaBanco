@@ -14,7 +14,7 @@ import banco.modelo.Livro;
 public class LivroDao implements Dao<Livro> {
 	
 	private static final String GET_BY_ID = "SELECT * FROM livro NATURAL JOIN autor WHERE id = ?";
-	private static final String GET_ALL = "SELECT * FROM livro NATURAL JOIN autor";
+	private static final String GET_ALL = "SELECT * FROM livro JOIN autor on livro.autor_id = autor.id";
 	private static final String INSERT = "INSERT INTO livro (titulo, anoPublicacao, editora, autor_id) "
 			+ "VALUES (?, ?, ?, ?)";
 	private static final String UPDATE = "UPDATE livro SET titulo = ?, anoPublicacao = ?, editora = ?, "

@@ -52,7 +52,7 @@ public class InterfaceLivroTexto extends InterfaceModeloTexto {
 		System.out.println("Lista de livros");
 		System.out.println();
 		
-		System.out.println("id\tAgência\tNúmero\tSaldo\tID do Autor\tNome do Autor");
+		System.out.println("id\tTitulo\tAno Publicacao\tEditora\tID do Autor\tNome do Autor");
 		
 		for (Livro livro : livros) {
 			imprimeItem(livro);
